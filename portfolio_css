@@ -1,0 +1,251 @@
+#homenav
+{
+    display: flex;
+    justify-content: space-around;
+}
+#homenav_home, #homenav_about_me , #homenav_contact
+{
+    padding-top: 50px;
+    margin: 50px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+}
+@media(min-width:480px)
+{
+    .home
+    {
+        height:25rem;
+    }
+}
+@media(min-width:720px)
+{
+    .home
+    {
+        height:35rem;
+    }
+}
+#homebg
+{
+    position:fixed;
+    object-fit: cover;
+    left:0px;
+    top:0px;
+    width:100%;
+    height:100vh;
+    background-attachment: fixed;
+   
+    z-index:-2;
+    
+}
+@media(min-aspect-ratio:16/9)
+{
+    #homebg
+    {
+        width:100%;
+        height:auto;
+    }
+}
+@media(max-aspect-ratio:16/9)
+{
+    #homebg
+    {
+        width:auto;
+        height:100%;
+    }
+}
+#homenav_home:hover
+{
+    color: red;
+    font-size: x-large;
+    font-weight: 800;
+}
+#homenav_about_me:hover
+{
+    color: red;
+    font-size: x-large;
+    font-weight: 800;
+}
+#homenav_contact:hover
+{
+    color: red;
+    font-size: x-large;
+    font-weight: 800;
+}
+.intro
+{
+    /* display: flex;
+    align-content: space-around;
+    flex-direction: column; */
+    text-align: center;
+    padding-top: 100px;
+    color:white;
+    
+}
+#hello_world
+{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: left;
+    padding-left: 100px;
+    font-weight: 600;
+    font-size: 1cm;
+}
+#this_is
+{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: left;
+    padding-left: 320px;
+    font-weight: 600;
+    margin: 20px;
+}
+#myname
+{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 800;
+    font-size: 1.5cm;
+    padding-left: 180px;
+}
+#intro_first_line
+{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: medium;
+    font-weight: 700;
+    margin: 30px;
+    padding-left: 60px;
+    border: coral;
+    border-width: medium;
+    border-radius: 6px;
+}
+#intro_second_line
+{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: medium;
+    font-weight: 700;
+    padding-left: 60px;
+}
+
+#about_me
+{
+    position: relative;
+    
+}
+#about_me_h1
+{
+    padding-top: 200px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: rgb(245, 132, 26);
+    font-size: 100;
+    
+}
+
+#about_first
+{
+    position: relative;
+    color: rgb(255, 0, 0);
+    text-align: center;
+    
+    margin-top: 80px;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 800;
+}
+.posts_container
+{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    align-content: space-between;
+
+}
+#posts_line
+{
+    color: rgb(214, 15, 64);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    padding-left: 80px;
+}
+#post1
+{
+    background-color: coral;
+    padding: 10px;
+    border: crimson;
+    border-style: solid;
+    border-radius: 6px;
+    margin: 30px;
+}
+#post2
+{
+    background-color: coral;
+    padding: 10px;
+    border: crimson;
+    border-style: solid;
+    border-radius: 6px;
+    margin: 30px;
+}
+#post3
+{
+    background-color: coral;
+    padding: 10px;
+    border: crimson;
+    border-style: solid;
+    border-radius: 6px;
+    margin: 10px;
+}
+#contact_h1
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: xx-large;
+    font-weight: bold;
+    text-align: center;
+    color: darkgoldenrod;
+}
+
+.social {
+	float: left;
+	margin: 2em 2em; width: 100px; height: 100px; 	
+	display: block; text-align: center; line-height:103px; color: #fff;
+	
+	position: relative;
+	transform:rotateY(0deg);
+	transition:transform .25s ease-out;
+	transform-style:preserve-3d;
+}
+.social > div {
+	width: 100px; height: 100px; background: #000;
+	position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+}
+.social >.front {
+	transform:translateZ(40px);
+}
+.social >.back {
+	background: #3B5998; font-size: 3em;
+	transform:rotateY(-100deg) translateZ(40px);
+}
+
+/*  Social Media Colors 
+	Facebook #3B5998
+	Flickr #FE0883
+	Foursquare #8FD400
+	Google+ #C63D2D
+	Instagram #4E433C
+	Linkedin #4875B4
+	Tumblr #2B4964
+	Twitter #33CCFF
+	Vimeo #86B32D
+	Youtube #FF3333
+	Dribbble #ea4c89
+*/
+.social.social-instagram > .back { background: #f1044b; }
+.social.social-github > .back { background: #f3f3f3; color: #000; }
+
+.social.social-linkedin > .back { background: #4875B4; }
+
+
+/* Hover */
+.social:hover {
+	transform: rotateY(100deg);
+}
